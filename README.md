@@ -10,6 +10,6 @@
 
 ## ForkApp
 
-1. ./forkapp forkapp -from ../applications/luci-app-plex -to ../applications/luci-app-demo
-2. ./forkapp upload -ip 192.168.100.1 -pwd "password" -from ../applications/luci-app-demo -to /root/
-3. ./forkapp upload -ip 192.168.100.1 -pwd "password" -from ../applications/luci-app-demo -to /root/ -script ../tools/simple-install.sh -install
+1. ./forkapp forkapp -from ../applications/luci-app-plex -to ../applications/luci-app-oneapi -replace "Plex/oneapi" -replace 32400/3000
+2. ./forkapp upload -ip 192.168.100.1 -pwd "password" -from ../applications/luci-app-oneapi -to /root/
+3. ./forkapp upload -ip 192.168.100.1 -pwd "password" -from ../applications/luci-app-oneapi -to /root/ -script ../tools/simple-install.sh -install
